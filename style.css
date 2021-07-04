@@ -50,7 +50,7 @@ p {
 }
 
 .section-title span {
-	color: blue;
+	color: yellow;
 }
 
 .cta {
@@ -58,7 +58,7 @@ p {
 	padding: 10px 30px;
 	color: white;
 	background-color: transparent;
-	border: 2px solid blue;
+	border: 2px solid yellow;
 	font-size: 2rem;
 	text-transform: uppercase;
 	letter-spacing: 0.1rem;
@@ -68,8 +68,9 @@ p {
 }
 
 .cta:hover {
-	color: white;
-	background-color: blue;
+	/* color: white; */
+	color: black;
+	background-color: yellow;
 }
 
 .brand h1 {
@@ -79,7 +80,7 @@ p {
 }
 
 .brand h1 span {
-	color: blue;
+	color: yellow;
 }
 
 /* Header section */
@@ -159,7 +160,7 @@ p {
 }
 
 #header .nav-list ul li:hover a {
-	color: blue;
+	color: yellow;
 }
 
 #header .hamburger {
@@ -243,7 +244,7 @@ p {
 	height: 100%;
 	width: 100%;
 	background-color: black;
-	opacity: 0.7;
+	opacity: 0.5;
 	z-index: -1;
 }
 
@@ -283,7 +284,7 @@ p {
 	left: 0;
 	height: 100%;
 	width: 0;
-	background-color: blue;
+	background-color: yellow;
 	animation: text_reveal_box 1s ease;
 	animation-delay: 0.5s;
 }
@@ -303,7 +304,7 @@ p {
 /* End Home Section */
 
 /* Services Section */
-#services .services {
+#register .register {
 	flex-direction: column;
 	text-align: center;
 	max-width: 1500px;
@@ -311,12 +312,12 @@ p {
 	padding: 100px 0;
 }
 
-#services .service-top {
+#register .service-top {
 	max-width: 500px;
 	margin: 0 auto;
 }
 
-#services .service-bottom {
+#register .service-bottom {
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -324,7 +325,7 @@ p {
 	margin-top: 50px;
 }
 
-#services .service-item {
+#register .service-item {
 	flex-basis: 80%;
 	display: flex;
 	align-items: flex-start;
@@ -332,7 +333,6 @@ p {
 	flex-direction: column;
 	padding: 30px;
 	border-radius: 10px;
-	background-image: url(./img/img2.png);
 	background-size: cover;
 	margin: 10px 5%;
 	position: relative;
@@ -340,7 +340,27 @@ p {
 	overflow: hidden;
 }
 
-#services .service-item::after {
+#register .service-item:nth-child(1) {
+	background-image: url(./img/pubg.jpg);
+	background-position: top center;
+}
+
+#register .service-item:nth-child(2) {
+	background-image: url(./img/codm.jpg);
+	background-position: top center;
+}
+
+#register .service-item:nth-child(3) {
+	background-image: url(./img/pubg.jpg);
+	background-position: top center;
+}
+
+#register .service-item:nth-child(4) {
+	background-image: url(./img/codm.jpg);
+	background-position: top center;
+}
+
+#register .service-item::after {
 	content: '';
 	position: absolute;
 	left: 0;
@@ -352,20 +372,20 @@ p {
 	z-index: -1;
 }
 
-#services .service-bottom .icon {
+#register .service-bottom .icon {
 	height: 80px;
 	width: 80px;
 	margin-bottom: 20px;
 }
 
-#services .service-item h2 {
+#register .service-item h2 {
 	font-size: 2rem;
 	color: white;
 	margin-bottom: 10px;
 	text-transform: uppercase;
 }
 
-#services .service-item p {
+#register .service-item p {
 	color: white;
 	text-align: left;
 }
@@ -373,25 +393,25 @@ p {
 /* End Services Section */
 
 /* Projects section */
-#projects .projects {
+#tournaments .tournaments {
 	flex-direction: column;
 	max-width: 1200px;
 	margin: 0 auto;
 	padding: 100px 0;
 }
 
-#projects .projects-header h1 {
+#tournaments .projects-header h1 {
 	margin-bottom: 50px;
 }
 
-#projects .all-projects {
+#tournaments .all-projects {
 	display: flex;
 	align-items: center;
 	justify-content: center;
 	flex-direction: column;
 }
 
-#projects .project-item {
+#tournaments .project-item {
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -402,7 +422,7 @@ p {
 	border-radius: 10px;
 }
 
-#projects .project-info {
+#tournaments .project-info {
 	padding: 30px;
 	flex-basis: 50%;
 	height: 100%;
@@ -414,29 +434,29 @@ p {
 	color: white;
 }
 
-#projects .project-info h1 {
+#tournaments .project-info h1 {
 	font-size: 4rem;
 	font-weight: 500;
 }
 
-#projects .project-info h2 {
+#tournaments .project-info h2 {
 	font-size: 1.8rem;
 	font-weight: 500;
 	margin-top: 10px;
 }
 
-#projects .project-info p {
+#tournaments .project-info p {
 	color: white;
 }
 
-#projects .project-img {
+#tournaments .project-img {
 	flex-basis: 50%;
 	height: 300px;
 	overflow: hidden;
 	position: relative;
 }
 
-#projects .project-img:after {
+#tournaments .project-img:after {
 	content: '';
 	position: absolute;
 	left: 0;
@@ -447,11 +467,11 @@ p {
 	opacity: 0.7;
 }
 
-#projects .project-img img {
+#tournaments .project-img img {
 	transition: 0.3s ease transform;
 }
 
-#projects .project-item:hover .project-img img {
+#tournaments .project-item:hover .project-img img {
 	transform: scale(1.1);
 }
 
@@ -507,7 +527,7 @@ p {
 	top: 19px;
 	height: 98%;
 	width: 98%;
-	border: 7px solid blue;
+	border: 7px solid yellow;
 	z-index: -1;
 }
 
@@ -629,12 +649,12 @@ p {
 @keyframes text_reveal_box {
 	50% {
 		width: 100%;
-		left: 0;
+		right: 0;
 	}
 
 	100% {
 		width: 0;
-		left: 100%;
+		right: 100%;
 	}
 }
 
@@ -646,7 +666,7 @@ p {
 
 @keyframes text_reveal_name {
 	100% {
-		color: blue;
+		color: yellow;
 		font-weight: 500;
 	}
 }
@@ -672,7 +692,7 @@ p {
 	/* End Hero */
 
 	/* Services Section */
-	#services .service-bottom .service-item {
+	#register .service-bottom .service-item {
 		flex-basis: 45%;
 		margin: 2.5%;
 	}
@@ -680,26 +700,26 @@ p {
 	/* End Services Section */
 
 	/* Project */
-	#projects .project-item {
+	#tournaments .project-item {
 		flex-direction: row;
 	}
 
-	#projects .project-item:nth-child(even) {
+	#tournaments .project-item:nth-child(even) {
 		flex-direction: row-reverse;
 	}
 
-	#projects .project-item {
+	#tournaments .project-item {
 		height: 400px;
 		margin: 0;
 		width: 100%;
 		border-radius: 0;
 	}
 
-	#projects .all-projects .project-info {
+	#tournaments .all-projects .project-info {
 		height: 100%;
 	}
 
-	#projects .all-projects .project-img {
+	#tournaments .all-projects .project-img {
 		height: 100%;
 	}
 
@@ -721,7 +741,7 @@ p {
 		top: 34px;
 		height: 98%;
 		width: 98%;
-		border: 10px solid blue;
+		border: 10px solid yellow;
 	}
 
 	#about .col-right {
